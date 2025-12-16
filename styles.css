@@ -102,6 +102,93 @@ a{
 /*  body  */
 
 
+/*    INDEX*/
+
+.index-div{
+    margin-top: 100px;
+    background-color: var(--bg-color);
+}
+.hero {
+    background-color: #eaf1f6;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.service-box {
+    background: white;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+.reviews-div{
+    background-color: #f7f7f7;
+}
+.reviews-heading{
+    color: var(--secondary-color);
+    font-family: var(--font-heading);
+    text-align: center;
+    margin: 30px;
+}
+
+.reviews-grid{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    gap: 30px;
+    padding: 30px 0;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+
+    margin-bottom: 50px;
+
+}
+.reviews-card{
+    background-color: var(--white);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+.reviews-card:hover {
+    /* Move up by 10 pixels */
+    transform: translateY(-10px);
+    /* Optional: Add a soft shadow to enhance the "lifting" effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.reviews-info{
+    padding: 23px;
+    text-align: center;
+    
+}
+.reviews-info h3{
+    font-size: 23px;
+    color: var(--secondary-color);
+    font-family: var(--font-heading);
+    margin-bottom: 10px;
+}
+.reviews-info p{
+    color: #666;
+    font-size: 14px;
+}
+.review{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 
 
 /*  Services  */
