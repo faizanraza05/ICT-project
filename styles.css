@@ -1,636 +1,590 @@
-
-
 :root {
-    --primary-color: #c5a085; /* Soft Bronze/Beige */
-    --secondary-color: #2c3e50; /* Dark Slate Blue/Grey */
-    --accent-color: #d4a373;
-    --bg-color: #fcfcfc;
-    --white: #ffffff;
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Poppins', sans-serif;
+  --primary-color: #c5a085; /* Soft Bronze/Beige */
+  --secondary-color: #2c3e50; /* Dark Slate Blue/Grey */
+  --accent-color: #d4a373;
+  --bg-color: #fcfcfc;
+  --white: #ffffff;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Poppins", sans-serif;
 }
 
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: var(--font-body);
-    margin: 0;
-    color: black;
-    background-color: var(--bg-color);
-    
-    
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  color: black;
+  background-color: var(--bg-color);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 /* Header Styles */
-.main-header{
-    background-color: var(--white);
-    padding-top: 0px;
-    padding-bottom: 0px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    /*shadow under the header*/
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    
+.main-header {
+  background-color: var(--white);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /*shadow under the header*/
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
-.header-content{
-    max-width: auto;
-    margin: 0 auto;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;/*push logo to left and links to right*/
-    align-items: center;
+.header-content {
+  max-width: auto;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between; /*push logo to left and links to right*/
+  align-items: center;
 }
-.logo{
-    display: flex;
-    flex-direction: column;/*it keeps the two lines in logo togather*/
-    line-height: 1;
-    
+.logo {
+  display: flex;
+  flex-direction: column; /*it keeps the two lines in logo togather*/
+  line-height: 1;
 }
-.logo-main{
-    font-weight: 1000;
-    font-size: xx-large;
-    margin-bottom: 0;
-    margin-left: 50px;
-    color: var(--secondary-color);
-    font-family: var(--font-heading);
+.logo-main {
+  font-weight: 1000;
+  font-size: xx-large;
+  margin-bottom: 0;
+  margin-left: 50px;
+  color: var(--secondary-color);
+  font-family: var(--font-heading);
 }
-.below-logo{
-    margin-top: 0;
-    margin-left: 43px;
-    font-weight: bolder;
-    font-size: small;
-    color: var(--secondary-color);
+.below-logo {
+  margin-top: 0;
+  margin-left: 43px;
+  font-weight: bolder;
+  font-size: small;
+  color: var(--secondary-color);
 }
-.links{
-    margin-right: 65px;
-    font-size: large;
-    font-weight: 500;
+.links {
+  margin-right: 65px;
+  font-size: large;
+  font-weight: 500;
 }
-.links a{
-    color: var(--secondary-color);
-    margin-left: 20px;
-
+.links a {
+  color: var(--secondary-color);
+  margin-left: 20px;
 }
-.link a:hover{
-    color: var(--accent-color);
+.link a:hover {
+  color: var(--accent-color);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /*  body  */
 
-
 /*    INDEX*/
 
-.index-div{
-    margin-top: 100px;
-    background-color: var(--bg-color);
+.index-div {
+  margin-top: 100px;
+  background-color: var(--bg-color);
 }
 .hero {
-    height: 700px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--white);
-    padding: 30px;
-    margin-top: -17px;
+  height: 700px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  padding: 30px;
+  margin-top: -17px;
 }
-
-
 
 .hero h1 {
-    font-family: var(--font-heading);
-    font-size: 60px;
-    
+  font-family: var(--font-heading);
+  font-size: 60px;
 }
-.hero p{
-    font-size: 20px;
+.hero p {
+  font-size: 20px;
+}
+.our-services {
+  background-color: var(--bg-color);
+  color: var(--secondary-color);
+  padding: 15px 50px;
+  border: solid;
+  border-color: var(--bg-color);
+  border-radius: 30px;
+  font-size: large;
+  margin-top: 30px;
 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.our-services{
-    background-color: var(--bg-color);
-    color: var(--secondary-color);
-    padding: 15px 50px;
-    border: solid;
-    border-color: var(--bg-color);
-    border-radius: 30px;
-    font-size: large;
-    margin-top: 30px;
-
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.our-services:hover {
+  transform: translateY(-5px);
+  /* Optional: Add a soft shadow to enhance the "lifting" effect */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
-.our-services:hover{
-    transform: translateY(-5px);
-    /* Optional: Add a soft shadow to enhance the "lifting" effect */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-}
-.elegent-heading{
-    color: var(--secondary-color);
-    font-family: var(--font-heading);
-    font-size: 40px;
-    text-align: center;
-    margin-top: 100px;
+.elegent-heading {
+  color: var(--secondary-color);
+  font-family: var(--font-heading);
+  font-size: 40px;
+  text-align: center;
+  margin-top: 100px;
 }
 .services {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
 }
 
 .service-box {
-    background: white;
-    padding: 20px;
-    width: 30%;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+  background: white;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.service-box:hover{
-    transform: translateY(-5px);
-    /* Optional: Add a soft shadow to enhance the "lifting" effect */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+.service-box:hover {
+  transform: translateY(-5px);
+  /* Optional: Add a soft shadow to enhance the "lifting" effect */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
-.service-box h3{
-    color: var(--secondary-color);
-    margin: 10px;
+.service-box h3 {
+  color: var(--secondary-color);
+  margin: 10px;
 }
-.service-box p{
-    color: rgb(61, 61, 61);
+.service-box p {
+  color: rgb(61, 61, 61);
 }
-.reviews-div{
-    background-color: #f7f7f7;
+.reviews-div {
+  background-color: #f7f7f7;
 }
-.reviews-heading{
-    color: var(--secondary-color);
-    font-family: var(--font-heading);
-    font-size: 40px;
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 30px;
+.reviews-heading {
+  color: var(--secondary-color);
+  font-family: var(--font-heading);
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 30px;
 }
 
-.reviews-grid{
-    display: grid;
-    grid-template-columns: repeat( 3, 1fr);
-    gap: 30px;
-    padding: 30px 0;
-    
-    max-width: 1200px;
-    margin: 0 auto;
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 30px 0;
 
-    margin-bottom: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 
+  margin-bottom: 50px;
 }
-.reviews-card{
-    background-color: var(--white);
-    border-radius: 20px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+.reviews-card {
+  background-color: var(--white);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .reviews-card:hover {
-    /* Move up by 10 pixels */
-    transform: translateY(-10px);
-    /* Optional: Add a soft shadow to enhance the "lifting" effect */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  /* Move up by 10 pixels */
+  transform: translateY(-10px);
+  /* Optional: Add a soft shadow to enhance the "lifting" effect */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
-.reviews-info{
-    padding: 23px;
-    text-align: center;
-    
+.reviews-info {
+  padding: 23px;
+  text-align: center;
 }
-.reviews-info h3{
-    font-size: 23px;
-    color: var(--secondary-color);
-    font-family: var(--font-heading);
-    margin-bottom: 10px;
+.reviews-info h3 {
+  font-size: 23px;
+  color: var(--secondary-color);
+  font-family: var(--font-heading);
+  margin-bottom: 10px;
 }
-.reviews-info p{
-    color: #666;
-    font-size: 14px;
+.reviews-info p {
+  color: #666;
+  font-size: 14px;
 }
-.review{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: large;
-    line-height: 1.8;
+.review {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: large;
+  line-height: 1.8;
 }
-
-
-
 
 /*  Services  */
-.services-content{
-    flex-grow: 1;
-    margin-top: 200px;
+.services-content {
+  flex-grow: 1;
+  margin-top: 200px;
 }
-.services-heading{
-    text-align: center;
-    margin-top: 50px;
-    color: var(--secondary-color);
-    font-family: var(--font-heading);
-    font-size: 3rem;
+.services-heading {
+  text-align: center;
+  margin-top: 50px;
+  color: var(--secondary-color);
+  font-family: var(--font-heading);
+  font-size: 3rem;
 }
-.below-services{
-    text-align: center;
-    color: var(--secondary-color);
-    font-family: var(--font-body);
-    margin-top: 10px;
-    font-size: large;
+.below-services {
+  text-align: center;
+  color: var(--secondary-color);
+  font-family: var(--font-body);
+  margin-top: 10px;
+  font-size: large;
 }
 
 /* all services*/
-.services-grid{
-    display: grid;
-    grid-template-columns: repeat( 3, 1fr);
-    gap: 30px;
-    padding: 30px 0;
-    
-    max-width: 1200px;
-    margin: 0 auto;
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 30px 0;
 
-    margin-bottom: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 
+  margin-bottom: 50px;
 }
-.services-card{
-    background-color: var(--white);
-    border-radius: 20px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+.services-card {
+  background-color: var(--white);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .services-card:hover {
-    /* Move up by 10 pixels */
-    transform: translateY(-10px);
-    /* Optional: Add a soft shadow to enhance the "lifting" effect */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  /* Move up by 10 pixels */
+  transform: translateY(-10px);
+  /* Optional: Add a soft shadow to enhance the "lifting" effect */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
-.services-image{
-    height: 300px;
-    width: 100%;
-    overflow: hidden;
-    
+.services-image {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
 }
-.services-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-
+.services-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
-.services-info{
-    padding: 23px;
-    text-align: center;
-    
+.services-info {
+  padding: 23px;
+  text-align: center;
 }
-.services-info h3{
-    font-size: 23px;
-    color: var(--secondary-color);
-    font-family: var(--font-heading);
-    margin-bottom: 10px;
+.services-info h3 {
+  font-size: 23px;
+  color: var(--secondary-color);
+  font-family: var(--font-heading);
+  margin-bottom: 10px;
 }
-.services-info p{
-    color: #666;
-    font-size: 14px;
+.services-info p {
+  color: #666;
+  font-size: 14px;
 }
 .service-link {
-    text-decoration: none;
-    color: inherit;
-    display: block; /* Ensures the link covers the whole card area */
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Ensures the link covers the whole card area */
 }
-
-
-
 
 /*  Details  */
 
-.details-content{
-    flex-grow: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 120px;
+.details-content {
+  flex-grow: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 120px;
 }
-.back-button{
-    font-size: 16px;
-    padding: 12px 16px;
-    background-color: var(--white);
-    color: var(--secondary-color);
-    border-color: var(--secondary-color);
-    border-radius: 20px;
-    border-width: 2px;
-    margin-left: 20px;
-
+.back-button {
+  font-size: 16px;
+  padding: 12px 16px;
+  background-color: var(--white);
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  border-radius: 20px;
+  border-width: 2px;
+  margin-left: 20px;
 }
-.back-button:hover{
-    color: var(--white);
-    background-color: var(--secondary-color);
+.back-button:hover {
+  color: var(--white);
+  background-color: var(--secondary-color);
 }
 
 /* Details container*/
 
-
-.details-container{
-    
-    background-color: var(--white);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.details-container {
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.details-image{
-    flex: 1;
-    min-width: 350px;
-    height: 500px;
+.details-image {
+  flex: 1;
+  min-width: 350px;
+  height: 500px;
 }
-.details-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.details-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.details-info{
-    flex: 1;
-    min-width: 350px;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.details-info {
+  flex: 1;
+  min-width: 350px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.details-info h2{
-    font-family: var(--font-heading);
-    font-size: 40px;
-    margin-bottom: 15px;
-    color: var(--secondary-color);
+.details-info h2 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
 }
-.price-tag{
-    font-size: 30px;
-    color: var(--primary-color);
-    font-weight: 700;
-    font-family: var(--font-heading);
-    margin-bottom: 25px;
-    display: block;
+.price-tag {
+  font-size: 30px;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-family: var(--font-heading);
+  margin-bottom: 25px;
+  display: block;
 }
-.details-time{
-    margin-bottom: 2rem;
-    color: #555;
-    font-size: 1.1rem;
+.details-time {
+  margin-bottom: 2rem;
+  color: #555;
+  font-size: 1.1rem;
 }
-.details-description{
-    margin-bottom: 2rem;
-    color: #666;
-    line-height: 1.8;
+.details-description {
+  margin-bottom: 2rem;
+  color: #666;
+  line-height: 1.8;
 }
-.book-button{
-    background-color: var(--secondary-color);
-    color: var(--white);
-    border: none;
-    padding: 12px 30px;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-family: var(--font-body);
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: inline-block;
+.book-button {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
 }
-.book-button:hover{
-    background-color: var(--accent-color);
+.book-button:hover {
+  background-color: var(--accent-color);
 }
-
-
-
-
 
 /* Footer Styles */
-.main-footer{
-    background-color: var(--secondary-color);
-    width: 100%;
-    padding: 30px 0;
-    margin-top: auto;
-    color: var(--bg-color);
+.main-footer {
+  background-color: var(--secondary-color);
+  width: 100%;
+  padding: 30px 0;
+  margin-top: auto;
+  color: var(--bg-color);
 }
-.footer-content{
-    max-width: 1200px;
-    margin: 0 auto;
-    
-    display: flex;
-    padding: 30px 0px;
-    gap: 30px;
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  padding: 30px 0px;
+  gap: 30px;
 }
-.footer-headings{
-    color: var(--accent-color);
-    font-family: var(--font-heading);
+.footer-headings {
+  color: var(--accent-color);
+  font-family: var(--font-heading);
 }
-.below-footer-headings{
-    color: var(--accent-color);
-    margin-top: 0;
-    font-weight: bolder;
-    font-size: large;
+.below-footer-headings {
+  color: var(--accent-color);
+  margin-top: 0;
+  font-weight: bolder;
+  font-size: large;
 }
-.footer-discription{
-    line-height: 2;
-    margin-top: 15px;
-    margin-bottom: 20px;
+.footer-discription {
+  line-height: 2;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
-.quick-links{
-    display: flex;
-    flex-direction: column;
+.quick-links {
+  display: flex;
+  flex-direction: column;
 }
-.quick-links a{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    color: var(--bg-color);
+.quick-links a {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: var(--bg-color);
 }
-.contact-us{
-    display: flex;
-    flex-direction: column;
+.contact-us {
+  display: flex;
+  flex-direction: column;
 }
 .footer-div1,
 .footer-div2,
-.footer-div3{
-    flex: 1;
-    padding: 0 20px;
+.footer-div3 {
+  flex: 1;
+  padding: 0 20px;
 }
 .ig-button,
 .fb-button,
-.wa-button{
-    border: none;
-    background-color: rgb(72, 98, 122);
-    color: white;
-    border-radius: 100px;
-    height: 40px;
-    max-width: 40px;
-    width: 100%;
-    
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.wa-button {
+  border: none;
+  background-color: rgb(72, 98, 122);
+  color: white;
+  border-radius: 100px;
+  height: 40px;
+  max-width: 40px;
+  width: 100%;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .ig-button:hover,
 .fb-button:hover,
-.wa-button:hover{
-    background-color: var(--accent-color);
-    transform: translateY(-5px);
+.wa-button:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-5px);
 }
-.contact-info{
-    margin-top: 15px;
-    margin-bottom: 15px;
+.contact-info {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-.footer-bottom{
-    justify-content: center;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0;
-    color: rgb(108, 108, 108);
+.footer-bottom {
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: rgb(108, 108, 108);
 
-    border-top: 1px;
-    border-top-color: rgb(108, 108, 108);
-    border-top-style: solid;
-    padding-top: 20px;
-    padding-bottom: 0;
-
+  border-top: 1px;
+  border-top-color: rgb(108, 108, 108);
+  border-top-style: solid;
+  padding-top: 20px;
+  padding-bottom: 0;
 }
-
-
 
 /* --- RESPONSIVE MOBILE FIXES --- */
 
 @media screen and (max-width: 768px) {
+  /* 1. Fix the Header (Logo & Links) */
+  .main-header {
+    position: relative; /* Changed from fixed */
+    box-shadow: none; /* Optional: looks cleaner on mobile */
+  }
 
-    /* 1. Fix the Header (Logo & Links) */
-    .main-header {
-        position: relative; /* Changed from fixed */
-        box-shadow: none;   /* Optional: looks cleaner on mobile */
-    }
+  /* 2. Remove the body padding on mobile since the header isn't fixed anymore */
+  body {
+    padding-top: 0;
+  }
 
-    /* 2. Remove the body padding on mobile since the header isn't fixed anymore */
-    body {
-        padding-top: 0;
-    }
+  .header-content {
+    height: auto; /* Allow header to grow taller */
+    flex-direction: column; /* Stack logo on top of links */
+    padding: 20px 0;
+  }
 
-    .header-content {
-        height: auto;         /* Allow header to grow taller */
-        flex-direction: column; /* Stack logo on top of links */
-        padding: 20px 0;
-    }
+  .logo {
+    align-items: center; /* Center the logo text */
+    margin-bottom: 20px;
+  }
 
-    .logo {
-        align-items: center;  /* Center the logo text */
-        margin-bottom: 20px;
-    }
-    
-    .logo-main, .below-logo {
-        margin-left: 0;       /* Remove desktop margins */
-    }
+  .logo-main,
+  .below-logo {
+    margin-left: 0; /* Remove desktop margins */
+  }
 
-    .links {
-        margin-right: 0;
-        display: flex;
-        flex-direction: column; /* Stack links vertically */
-        gap: 15px;            /* Space between links */
-        text-align: center;
-    }
-    
-    .links a {
-        margin-left: 0;
-    }
+  .links {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    gap: 15px; /* Space between links */
+    text-align: center;
+  }
 
-    /* 2. Fix the Grids (Services & Reviews) */
-    /* This changes them from 3 columns to 1 column */
-    .services-grid, 
-    .reviews-grid {
-        grid-template-columns: 1fr; 
-        padding: 20px;        /* Add side padding */
-    }
+  .links a {
+    margin-left: 0;
+  }
 
-    /* 3. Fix the "Three Box" Services Section */
-    .services {
-        flex-direction: column; /* Stack the boxes */
-        align-items: center;
-    }
-    
-    .service-box {
-        width: 100%;          /* Make box full width */
-        margin-bottom: 20px;
-    }
+  /* 2. Fix the Grids (Services & Reviews) */
+  /* This changes them from 3 columns to 1 column */
+  .services-grid,
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    padding: 20px; /* Add side padding */
+  }
 
-    /* 4. Fix the Hero Section (Too tall on mobile) */
-    .hero {
-        height: auto;         /* let content define height */
-        min-height: 400px;
-        padding: 60px 20px;
-    }
-    
-    .hero h1 {
-        font-size: 36px;      /* Smaller heading */
-    }
+  /* 3. Fix the "Three Box" Services Section */
+  .services {
+    flex-direction: column; /* Stack the boxes */
+    align-items: center;
+  }
 
-    /* 5. Fix the Details/Booking Section */
-    .details-content {
-        margin-top: 100px;    /* Less gap at top */
-        padding: 0 15px;
-    }
+  .service-box {
+    width: 100%; /* Make box full width */
+    margin-bottom: 20px;
+  }
 
-    .details-container {
-        flex-direction: column; /* Stack image on top of text */
-    }
+  /* 4. Fix the Hero Section (Too tall on mobile) */
+  .hero {
+    height: auto; /* let content define height */
+    min-height: 400px;
+    padding: 60px 20px;
+  }
 
-    .details-image, 
-    .details-info {
-        min-width: 100%;      /* Fix the "350px" width causing side-scroll */
-        padding: 20px;
-    }
+  .hero h1 {
+    font-size: 36px; /* Smaller heading */
+  }
 
-    .details-image {
-        height: 300px;        /* Shorter image for mobile */
-    }
+  /* 5. Fix the Details/Booking Section */
+  .details-content {
+    margin-top: 100px; /* Less gap at top */
+    padding: 0 15px;
+  }
 
-    /* 6. Fix Footer Stacking */
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
-    }
+  .details-container {
+    flex-direction: column; /* Stack image on top of text */
+  }
 
-    /* Center the footer links */
-    .quick-links, .contact-us {
-        align-items: center;
-    }
+  .details-image,
+  .details-info {
+    min-width: 100%; /* Fix the "350px" width causing side-scroll */
+    padding: 20px;
+  }
+
+  .details-image {
+    height: 300px; /* Shorter image for mobile */
+  }
+
+  /* 6. Fix Footer Stacking */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  /* Center the footer links */
+  .quick-links,
+  .contact-us {
+    align-items: center;
+  }
 }
