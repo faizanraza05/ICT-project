@@ -109,21 +109,54 @@ a{
     background-color: var(--bg-color);
 }
 .hero {
-    background-color: #eaf1f6;
-    padding: 60px 20px;
+    height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-
+    color: var(--white);
+    padding: 30px;
+    margin-top: -17px;
 }
 
+
+
 .hero h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-family: var(--font-heading);
+    font-size: 60px;
+    
+}
+.hero p{
+    font-size: 20px;
+
+}
+.our-services{
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    padding: 15px;
+    border: solid;
+    border-color: var(--bg-color);
+    border-radius: 30px;
+    font-size: large;
+    margin-top: 30px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.our-services:hover{
+    transform: translateY(-5px);
+    /* Optional: Add a soft shadow to enhance the "lifting" effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 .elegent-heading{
     color: var(--secondary-color);
     font-family: var(--font-heading);
+    font-size: 40px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .services {
     display: flex;
@@ -138,6 +171,13 @@ a{
     text-align: center;
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+.service-box:hover{
+    transform: translateY(-5px);
+    /* Optional: Add a soft shadow to enhance the "lifting" effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 .reviews-div{
     background-color: #f7f7f7;
@@ -145,8 +185,9 @@ a{
 .reviews-heading{
     color: var(--secondary-color);
     font-family: var(--font-heading);
+    font-size: 40px;
     text-align: center;
-    margin: 2ch;
+    margin: 30px;
 }
 
 .reviews-grid{
