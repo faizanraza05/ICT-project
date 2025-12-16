@@ -112,13 +112,19 @@ a{
     background-color: #eaf1f6;
     padding: 60px 20px;
     text-align: center;
+
 }
 
 .hero h1 {
     font-size: 36px;
     margin-bottom: 10px;
 }
-
+.elegent-heading{
+    color: var(--secondary-color);
+    font-family: var(--font-heading);
+    text-align: center;
+    margin-top: 20px;
+}
 .services {
     display: flex;
     justify-content: space-around;
@@ -140,7 +146,7 @@ a{
     color: var(--secondary-color);
     font-family: var(--font-heading);
     text-align: center;
-    margin: 30px;
+    margin: 2ch;
 }
 
 .reviews-grid{
@@ -186,6 +192,8 @@ a{
 .review{
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: large;
+    line-height: 1.8;
 }
 
 
