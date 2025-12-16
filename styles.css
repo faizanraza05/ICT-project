@@ -1,3 +1,5 @@
+
+
 :root {
     --primary-color: #c5a085; /* Soft Bronze/Beige */
     --secondary-color: #2c3e50; /* Dark Slate Blue/Grey */
@@ -21,6 +23,7 @@ body{
     margin: 0;
     color: black;
     background-color: var(--bg-color);
+    
     
     display: flex;
     flex-direction: column;
@@ -156,7 +159,7 @@ a{
     font-family: var(--font-heading);
     font-size: 40px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 .services {
     display: flex;
@@ -493,7 +496,9 @@ a{
     color: white;
     border-radius: 100px;
     height: 40px;
-    width: 40px;
+    max-width: 40px;
+    width: 100%;
+    
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -521,4 +526,111 @@ a{
     padding-top: 20px;
     padding-bottom: 0;
 
+}
+
+
+
+/* --- RESPONSIVE MOBILE FIXES --- */
+
+@media screen and (max-width: 768px) {
+
+    /* 1. Fix the Header (Logo & Links) */
+    .main-header {
+        position: relative; /* Changed from fixed */
+        box-shadow: none;   /* Optional: looks cleaner on mobile */
+    }
+
+    /* 2. Remove the body padding on mobile since the header isn't fixed anymore */
+    body {
+        padding-top: 0;
+    }
+
+    .header-content {
+        height: auto;         /* Allow header to grow taller */
+        flex-direction: column; /* Stack logo on top of links */
+        padding: 20px 0;
+    }
+
+    .logo {
+        align-items: center;  /* Center the logo text */
+        margin-bottom: 20px;
+    }
+    
+    .logo-main, .below-logo {
+        margin-left: 0;       /* Remove desktop margins */
+    }
+
+    .links {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        gap: 15px;            /* Space between links */
+        text-align: center;
+    }
+    
+    .links a {
+        margin-left: 0;
+    }
+
+    /* 2. Fix the Grids (Services & Reviews) */
+    /* This changes them from 3 columns to 1 column */
+    .services-grid, 
+    .reviews-grid {
+        grid-template-columns: 1fr; 
+        padding: 20px;        /* Add side padding */
+    }
+
+    /* 3. Fix the "Three Box" Services Section */
+    .services {
+        flex-direction: column; /* Stack the boxes */
+        align-items: center;
+    }
+    
+    .service-box {
+        width: 100%;          /* Make box full width */
+        margin-bottom: 20px;
+    }
+
+    /* 4. Fix the Hero Section (Too tall on mobile) */
+    .hero {
+        height: auto;         /* let content define height */
+        min-height: 400px;
+        padding: 60px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 36px;      /* Smaller heading */
+    }
+
+    /* 5. Fix the Details/Booking Section */
+    .details-content {
+        margin-top: 100px;    /* Less gap at top */
+        padding: 0 15px;
+    }
+
+    .details-container {
+        flex-direction: column; /* Stack image on top of text */
+    }
+
+    .details-image, 
+    .details-info {
+        min-width: 100%;      /* Fix the "350px" width causing side-scroll */
+        padding: 20px;
+    }
+
+    .details-image {
+        height: 300px;        /* Shorter image for mobile */
+    }
+
+    /* 6. Fix Footer Stacking */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    /* Center the footer links */
+    .quick-links, .contact-us {
+        align-items: center;
+    }
 }
