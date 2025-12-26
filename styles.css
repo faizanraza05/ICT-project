@@ -92,6 +92,7 @@ a {
 .login-page{
   display: flex;
   justify-content: center;
+  
 }
 
 /* The Card Container */
@@ -466,7 +467,7 @@ a {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 .services-image {
-  height: 300px;
+  height: 400px;
   width: 100%;
   overflow: hidden;
 }
@@ -535,7 +536,7 @@ a {
 .details-image {
   flex: 1;
   min-width: 350px;
-  height: 500px;
+  height: 600px;
 }
 .details-image img {
   width: 100%;
@@ -548,7 +549,8 @@ a {
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
+  
 }
 .details-info h2 {
   font-family: var(--font-heading);
@@ -587,6 +589,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
+  margin-top: auto;
 }
 .book-button:hover {
   background-color: var(--accent-color);
